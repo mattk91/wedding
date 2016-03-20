@@ -1,0 +1,33 @@
+<!--<!DOCTYPE html>-->
+<html lang="en" ng-app="app" ng-controller="MainController">
+<head>
+    <meta charset="UTF-8">
+    <base href="/wedding/">
+    <title>Matt and Colleen get Married {{subTitle ? ' - ' + subTitle : ''}}</title>
+
+    <!--Required libraries-->
+    <script src="lib/angular-1.5.0.min.js"></script>
+    <script src="lib/angular-route-1.2.25.min.js"></script>
+    <link rel="stylesheet" href="lib/bootstrap-3.3.6.min.css">
+
+    <!--Angular Scripts-->
+    <script src="js/module.js"></script>
+    <script src="js/navbar.controller.js"></script>
+    <script src="js/accommodation.controller.js"></script>
+    <script src="js/event.controller.js"></script>
+    <script src="js/gift.controller.js"></script>
+    <script src="js/home.controller.js"></script>
+    <script src="js/main.controller.js"></script>
+    <script src="js/rsvp.controller.js"></script>
+    <script src="js/things-to-do.controller.js"></script>
+    <script src="js/routes.js"></script>
+
+    <!--Styling-->
+    <link rel="stylesheet" href="styles/main.css">
+
+</head>
+<body>
+    <ng-include src="'partials/navbar.html'"></ng-include>
+    <div ng-view></div>
+</body>
+</html>

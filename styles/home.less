@@ -1,0 +1,57 @@
+.base-logo {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  text-shadow: 4px 4px 4px rgba(50,50,50,0.3);
+}
+.logo {
+  .base-logo;
+  top: 100px;
+  font-family: CormorantSCBold, serif;
+  font-size: 100px;
+}
+
+.sub-logo {
+  .base-logo;
+  top: 200px;
+  font-family: CormorantSCLight, serif;
+  font-size: 43px;
+}
+
+.sub-content {
+  .gentle-shadow-top;
+  position: relative; // Needed to position above the image for some reason..
+  background-color: @cream;
+
+}
+
+.about-col {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  font-family: RalewayLight, sans-erif;
+}
+
+.about-left-col {
+  .about-col;
+  padding-left: 500px;
+  padding-right: 50px;
+  //text-align: right;
+}
+
+.about-right-col {
+  .about-col;
+  padding-left: 50px;
+  padding-right: 500px;
+}
+
+.about-name {
+  font-family: CormorantSCBold, serif;
+  font-size: 72px;
+  margin-bottom: -30px;
+}
+
+.about-title {
+  color: teal;
+  font-family: CormorantSCLight, serif;
+  font-size: 35px;
+}
