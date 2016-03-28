@@ -10,8 +10,11 @@ nav {
   overflow: hidden;
   text-align: center;
   position: absolute;
+  background-color: rgba(0, 0, 0, 0.5);
   z-index: 100;
-  top: 0;
+  bottom: 5%;
+  //bottom: 0;
+
   width: 100%;
   ul {
     margin: 0;
@@ -20,7 +23,7 @@ nav {
       display: inline-block;
       list-style-type: none;
       > a {
-        color: #b73800;
+        color: white;
         display: block;
         line-height: 2em;
         padding: 1.0em 2.0em;
@@ -29,9 +32,18 @@ nav {
         font-size: large;
         font-weight: bold;
         &:hover, &:active, &:focus {
-          color: teal;
+          color: @orange2;
           font-weight: bold;
           text-decoration: none;
+          i.nav-icon {
+            color: @orange2;
+          }
+        }
+        i.nav-icon {
+          color: teal;
+          display: block;
+          font-size: 40pt;
+          margin-bottom:20px;
         }
       }
     }

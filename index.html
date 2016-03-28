@@ -8,7 +8,8 @@
     <!--Required libraries-->
     <script src="lib/angular-1.5.0.min.js"></script>
     <script src="lib/angular-route-1.2.25.min.js"></script>
-    <link rel="stylesheet" href="lib/bootstrap-3.3.6.min.css">
+    <!--<link rel="stylesheet" href="lib/bootstrap-3.3.6.min.css">-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 
     <!--Angular Scripts-->
     <script src="js/module.js"></script>
@@ -27,7 +28,8 @@
 
 </head>
 <body>
-    <!--<ng-include src="'partials/navbar.html'"></ng-include>-->
+    <div class="img-background"></div>
+    <ng-include src="'partials/navbar.html'"></ng-include>
     <div ng-view></div>
 </body>
 </html>

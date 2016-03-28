@@ -35,3 +35,19 @@
 .gentle-shadow-bottom {
   box-shadow: 0 5px 5px -2px rgba(50,50,50,0.2);
 }
+
+.img-background {
+  height: 100%;
+  width: 100%;
+  .gray;
+  background-image: url('../img/matt-colleen-sq.jpg');
+  background-position: center left;
+  background-size: cover;
+  @media screen and (min-aspect-ratio: 6/4) {
+    background-image: url('../img/panama-landscape.jpg');
+  }
+}
+.gray {
+  -webkit-filter: grayscale(85%);
+  filter: grayscale(85%);
+}
