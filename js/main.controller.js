@@ -5,7 +5,7 @@
         .module('app')
         .controller('MainController', MainController);
 
-    MainController.$inject = ['$scope']
+    MainController.$inject = ['$scope'];
     function MainController($scope) {
     }
 

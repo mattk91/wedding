@@ -6,14 +6,13 @@ body {
 }
 
 nav {
-  background-color: @cream;
   margin: 0;
   overflow: hidden;
   text-align: center;
-  position: fixed;
+  position: absolute;
+  z-index: 100;
   top: 0;
   width: 100%;
-  .gentle-shadow-bottom;
   ul {
     margin: 0;
     padding: 0;
@@ -21,12 +20,14 @@ nav {
       display: inline-block;
       list-style-type: none;
       > a {
-        color: @dark-grey;
+        color: #b73800;
         display: block;
         line-height: 2em;
         padding: 1.0em 2.0em;
         text-decoration: none;
         font-family: Raleway, sans-serif;
+        font-size: large;
+        font-weight: bold;
         &:hover, &:active, &:focus {
           color: teal;
           font-weight: bold;
