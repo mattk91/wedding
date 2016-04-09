@@ -24,7 +24,7 @@ nav ul li > a {
   color: white;
   display: block;
   line-height: 2em;
-  padding: 1.0em 2.0em;
+  padding: 1.0em 3.5em;
   text-decoration: none;
   font-family: Raleway, sans-serif;
   font-size: large;
@@ -45,23 +45,25 @@ nav ul li > a:focus i.nav-icon {
 nav ul li > a i.nav-icon {
   color: teal;
   display: block;
-  font-size: 40pt;
+  font-size: 30pt;
   margin-bottom: 20px;
 }
 .script {
-  color: #175d63;
+  color: white;
   font-family: LemonMilk, sans-serif;
-  font-size: 100px;
-  text-shadow: 4px 4px 4px #b0a50e;
+  font-size: 150px;
   line-height: 1.0;
   margin-bottom: 15px;
 }
 .subscript {
-  font-family: Armonioso, sans-serif;
+  font-family: Raleway, sans-serif;
+  font-size: 25px;
+  font-weight: bold;
+  color: white;
 }
 .background {
-  -webkit-filter: grayscale(85%);
-  filter: grayscale(85%);
+  -webkit-filter: grayscale(70%) brightness(0.55);
+  filter: grayscale(70%) brightness(0.55);
   background-color: #fbfbf8;
   background-image: url("../img/symphony.png");
   box-shadow: 5px 0 5px 0 rgba(50, 50, 50, 0.2);
@@ -70,6 +72,9 @@ nav ul li > a i.nav-icon {
   position: absolute;
   left: 0;
   padding: 50px;
+}
+.holder {
+  padding: 100px;
 }
 @font-face {
   font-family: 'RalewayLight';
@@ -104,8 +109,9 @@ nav ul li > a i.nav-icon {
 .img-background {
   height: 100%;
   width: 100%;
-  -webkit-filter: grayscale(85%);
-  filter: grayscale(85%);
+  position: fixed;
+  -webkit-filter: grayscale(70%) brightness(0.55);
+  filter: grayscale(70%) brightness(0.55);
   background-image: url('../img/matt-colleen-sq.jpg');
   background-position: center left;
   background-size: cover;
@@ -116,6 +122,9 @@ nav ul li > a i.nav-icon {
   }
 }
 .gray {
-  -webkit-filter: grayscale(85%);
-  filter: grayscale(85%);
+  -webkit-filter: grayscale(70%) brightness(0.55);
+  filter: grayscale(70%) brightness(0.55);
+}
+div.main-view {
+  position: relative;
 }

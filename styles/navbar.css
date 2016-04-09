@@ -24,7 +24,7 @@ nav ul li > a {
   color: white;
   display: block;
   line-height: 2em;
-  padding: 1.0em 2.0em;
+  padding: 1.0em 3.5em;
   text-decoration: none;
   font-family: Raleway, sans-serif;
   font-size: large;
@@ -45,6 +45,6 @@ nav ul li > a:focus i.nav-icon {
 nav ul li > a i.nav-icon {
   color: teal;
   display: block;
-  font-size: 40pt;
+  font-size: 30pt;
   margin-bottom: 20px;
 }

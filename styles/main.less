@@ -39,6 +39,7 @@
 .img-background {
   height: 100%;
   width: 100%;
+  position: fixed;
   .gray;
   background-image: url('../img/matt-colleen-sq.jpg');
   background-position: center left;
@@ -48,6 +49,10 @@
   }
 }
 .gray {
-  -webkit-filter: grayscale(85%);
-  filter: grayscale(85%);
+  -webkit-filter: grayscale(70%) brightness(0.55);
+  filter: grayscale(70%) brightness(0.55);
+}
+
+div.main-view {
+  position: relative;
 }
