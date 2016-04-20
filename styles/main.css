@@ -176,6 +176,15 @@ body {
 .content img {
   width: 100%;
 }
+.content .pull-bottom-right {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+.sub-content {
+  display: flex;
+  align-items: center;
+}
 .sub-content:not(:last-child) {
   padding-bottom: 50px;
 }
@@ -191,27 +200,12 @@ body {
   height: 30px;
   fill: #009688;
 }
-.button {
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  background-color: transparent;
-  cursor: pointer;
-  font-weight: bold;
-  padding: 10px;
-  border: 2px solid #009688;
-  color: #009688;
-  box-shadow: 5px 5px 5px -2px rgba(50, 50, 50, 0.2);
-}
-.button:hover,
-.button:active {
-  color: #FF3D00;
-  border-color: #FF3D00;
-  text-decoration: none;
-}
 .vertical-align {
   display: flex;
   align-items: center;
+}
+div.main-view {
+  position: relative;
 }
 .gentle-shadow-top {
   box-shadow: 0 -5px 5px -2px rgba(50, 50, 50, 0.2);
@@ -225,35 +219,4 @@ body {
 .gray {
   -webkit-filter: grayscale(70%) brightness(0.55);
   -filter: grayscale(70%) brightness(0.55);
-}
-.content-white {
-  background: white url('../img/square_bg.png') repeat;
-  border-top: 5px solid #009688;
-}
-.content-teal {
-  background: #009688 none;
-  color: white;
-}
-.content-teal h1,
-.content-teal h2,
-.content-teal h3 {
-  color: white;
-}
-.img-background {
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  -webkit-filter: grayscale(70%) brightness(0.55);
-  -filter: grayscale(70%) brightness(0.55);
-  background-image: url('../img/matt-colleen-sq.jpg');
-  background-position: center left;
-  background-size: cover;
-}
-@media screen and (min-aspect-ratio: 6/4) {
-  .img-background {
-    background-image: url('../img/panama-landscape.jpg');
-  }
-}
-div.main-view {
-  position: relative;
 }

@@ -1,0 +1,44 @@
+@import "effects";
+@import "colours";
+
+.button {
+  // todo redo these? don't like them!
+  background-color: transparent;
+  cursor: pointer;
+  font-weight:bold;
+  padding: 10px;
+  border: 2px solid @teal500;
+  color: @teal500;
+  &:hover, &:active {
+    color: @deepOrangeA400;
+    border-color: @deepOrangeA400;
+    text-decoration: none;
+  }
+  .gentle-shadow-bottom-right;
+}
+
+.content-white {
+  background: white url('../img/square_bg.png') repeat;
+  border-top: 5px solid @teal500;
+}
+
+.content-teal {
+  background: @teal500 none;
+  color: white;
+  h1, h2, h3 {
+    color: white;
+  }
+}
+
+.img-background {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  .gray;
+  background-image: url('../img/matt-colleen-sq.jpg');
+  background-position: center left;
+  background-size: cover;
+  @media screen and (min-aspect-ratio: 6/4) {
+    background-image: url('../img/panama-landscape.jpg');
+  }
+}

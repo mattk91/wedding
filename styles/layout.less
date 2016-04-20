@@ -16,10 +16,19 @@ body {
   img {
     width: 100%;
   }
+
+  .pull-bottom-right {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
 }
 
-.sub-content:not(:last-child) {
-  padding-bottom: 50px;
+.sub-content {
+  .vertical-align;
+  &:not(:last-child) {
+    padding-bottom: 50px;
+  }
 }
 
 .sub-info {
@@ -37,28 +46,12 @@ body {
 
 }
 
-.button {
-  position: absolute;
-  right: 0;
-  bottom: 0;
-
-
-  background-color: transparent;
-  cursor: pointer;
-  font-weight:bold;
-  padding: 10px;
-  border: 2px solid @teal500;
-  color: @teal500;
-  &:hover, &:active {
-    color: @deepOrangeA400;
-    border-color: @deepOrangeA400;
-    text-decoration: none;
-  }
-  .gentle-shadow-bottom-right;
-  
-}
-
 .vertical-align {
   display: flex;
   align-items: center;
+}
+
+// todo unused?
+div.main-view {
+  position: relative;
 }
