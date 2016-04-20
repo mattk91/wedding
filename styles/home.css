@@ -1,24 +1,16 @@
-.base-logo {
-  position: absolute;
-  width: 100%;
-  text-align: center;
-  text-shadow: 4px 4px 4px rgba(50, 50, 50, 0.3);
+.script {
+  color: white;
+  font-family: LemonMilk, sans-serif;
+  font-size: 150px;
+  line-height: 1.0;
+  margin-bottom: 15px;
 }
-.logo {
-  position: absolute;
-  width: 100%;
-  text-align: center;
-  text-shadow: 4px 4px 4px rgba(50, 50, 50, 0.3);
-  top: 100px;
-  font-family: CormorantSCBold, serif;
-  font-size: 100px;
+.subscript {
+  font-family: Raleway, sans-serif;
+  font-size: 25px;
+  font-weight: bold;
+  color: white;
 }
-.sub-logo {
-  position: absolute;
-  width: 100%;
-  text-align: center;
-  text-shadow: 4px 4px 4px rgba(50, 50, 50, 0.3);
-  top: 200px;
-  font-family: CormorantSCLight, serif;
-  font-size: 43px;
+.holder {
+  padding: 100px;
 }

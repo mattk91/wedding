@@ -1,45 +1,29 @@
 @import "colours";
 @import "navbar";
 @import "home";
+@import "typography";
+@import "layout";
+@import "effects";
+@import "prefixer";
 
-@font-face {
-  font-family: 'RalewayLight';
-  src: url('../fonts/Raleway-Light.ttf');
-}
-@font-face {
-  font-family: 'Raleway';
-  src: url('../fonts/Raleway-Regular.ttf');
-}
-@font-face {
-  font-family: 'CormorantSCBold';
-  src: url('../fonts/CormorantSC-Bold.otf');
-}
-@font-face {
-  font-family: 'CormorantSCLight';
-  src: url('../fonts/CormorantSC-Light.otf');
+
+.content-white {
+  background: white url('../img/square_bg.png') repeat;
+  border-top: 5px solid @teal500;
 }
 
-@font-face {
-  font-family: 'Armonioso';
-  src: url('../fonts/armonioso.regular.ttf');
-}
-
-@font-face {
-  font-family: 'LemonMilk';
-  src: url('../fonts/LemonMilk.otf');
-}
-
-.gentle-shadow-top {
-  box-shadow: 0 -5px 5px -2px rgba(50, 50, 50, 0.2);
-}
-.gentle-shadow-bottom {
-  box-shadow: 0 5px 5px -2px rgba(50,50,50,0.2);
+.content-teal {
+  background: @teal500 none;
+  color: white;
+  h1, h2, h3 {
+    color: white;
+  }
 }
 
 .img-background {
   height: 100%;
   width: 100%;
-  position: fixed;
+  position: absolute;
   .gray;
   background-image: url('../img/matt-colleen-sq.jpg');
   background-position: center left;
@@ -47,10 +31,6 @@
   @media screen and (min-aspect-ratio: 6/4) {
     background-image: url('../img/panama-landscape.jpg');
   }
-}
-.gray {
-  -webkit-filter: grayscale(70%) brightness(0.55);
-  filter: grayscale(70%) brightness(0.55);
 }
 
 div.main-view {

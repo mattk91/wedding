@@ -1,48 +1,107 @@
-body {
-  margin: 0;
-  padding: 0;
-}
-nav {
-  margin: 0;
-  overflow: hidden;
-  text-align: center;
+.navbar-bottom {
   position: absolute;
+  top: 80%;
+}
+.navbar-top {
+  position: fixed;
+  top: 0;
+  z-index: 10;
+}
+.translucent-black {
   background-color: rgba(0, 0, 0, 0.5);
-  z-index: 100;
-  bottom: 5%;
+}
+.smooth-transition {
+  -webkit-transition: all 0.5s ease-out;
+  -moz-transition: all 0.5s ease-out;
+  -ms-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+}
+.navbar {
+  -webkit-transition: all 0.5s ease-out;
+  -moz-transition: all 0.5s ease-out;
+  -ms-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+  text-align: center;
   width: 100%;
 }
-nav ul {
+.navbar ul {
   margin: 0;
   padding: 0;
 }
-nav ul li {
+.navbar ul li {
   display: inline-block;
   list-style-type: none;
 }
-nav ul li > a {
+.navbar-fonts a {
   color: white;
+  fill: #175d63;
   display: block;
   line-height: 2em;
   padding: 1.0em 3.5em;
   text-decoration: none;
-  font-family: Raleway, sans-serif;
   font-size: large;
   font-weight: bold;
 }
-nav ul li > a:hover,
-nav ul li > a:active,
-nav ul li > a:focus {
+.navbar-fonts a:hover,
+.navbar-fonts a:active,
+.navbar-fonts a:focus {
   color: #b73800;
+  fill: #b73800;
   font-weight: bold;
   text-decoration: none;
 }
-nav ul li > a:hover i.nav-icon,
-nav ul li > a:active i.nav-icon,
-nav ul li > a:focus i.nav-icon {
+.navbar-fonts a:hover i.nav-icon,
+.navbar-fonts a:active i.nav-icon,
+.navbar-fonts a:focus i.nav-icon {
   color: #b73800;
 }
-nav ul li > a i.nav-icon {
+.navbar-fonts a svg {
+  margin-top: -10px;
+  margin-bottom: -30px;
+  display: block;
+  width: 85px;
+}
+.navbar-fonts a i.nav-icon {
+  color: teal;
+  display: block;
+  font-size: 30pt;
+  margin-bottom: 20px;
+}
+nav {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+nav a {
+  color: white;
+  fill: #175d63;
+  display: block;
+  line-height: 2em;
+  padding: 1.0em 3.5em;
+  text-decoration: none;
+  font-size: large;
+  font-weight: bold;
+}
+nav a:hover,
+nav a:active,
+nav a:focus {
+  color: #b73800;
+  fill: #b73800;
+  font-weight: bold;
+  text-decoration: none;
+}
+nav a:hover i.nav-icon,
+nav a:active i.nav-icon,
+nav a:focus i.nav-icon {
+  color: #b73800;
+}
+nav a svg {
+  margin-top: -10px;
+  margin-bottom: -30px;
+  display: block;
+  width: 85px;
+}
+nav a i.nav-icon {
   color: teal;
   display: block;
   font-size: 30pt;

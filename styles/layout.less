@@ -1,0 +1,64 @@
+@import "colours";
+@import "prefixer";
+@import "effects";
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.content {
+  z-index: 1;
+  position: relative;
+  padding: 50px 20%;
+  top: 600px;
+  width: 100%;
+  img {
+    width: 100%;
+  }
+}
+
+.sub-content:not(:last-child) {
+  padding-bottom: 50px;
+}
+
+.sub-info {
+  .col-md-1 {
+    text-align: center;
+  }
+  padding-top: 15px;
+  font-size: 14px;
+
+  svg {
+    width: 30px;
+    height: 30px;
+    fill: @teal500;
+  }
+
+}
+
+.button {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+
+
+  background-color: transparent;
+  cursor: pointer;
+  font-weight:bold;
+  padding: 10px;
+  border: 2px solid @teal500;
+  color: @teal500;
+  &:hover, &:active {
+    color: @deepOrangeA400;
+    border-color: @deepOrangeA400;
+    text-decoration: none;
+  }
+  .gentle-shadow-bottom-right;
+  
+}
+
+.vertical-align {
+  display: flex;
+  align-items: center;
+}
