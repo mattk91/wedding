@@ -245,7 +245,7 @@ body {
   border-top: 5px solid #009688;
 }
 .content-white h1 {
-  color: #FF3D00;
+  color: #FF6D00;
 }
 .content-white .button {
   border-color: #009688;
@@ -253,8 +253,8 @@ body {
 }
 .content-white .button:hover,
 .content-white .button:active {
-  color: #FF3D00;
-  border-color: #FF3D00;
+  color: #FF6D00;
+  border-color: #FF6D00;
 }
 .content-teal {
   background: #009688 none;
