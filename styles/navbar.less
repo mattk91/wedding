@@ -25,7 +25,9 @@
   transition: all 0.5s ease-out;
 }
 .navbar {
-  .smooth-transition;
+  background-color: @teal700;
+  .navbar-top;
+  //.smooth-transition;
   text-align: center;
   width: 100%;
   ul {
@@ -41,16 +43,18 @@
 .navbar-fonts {
   a {
     color: white;
-    fill: @teal;
+    //fill: @teal;
     display: block;
     line-height: 2em;
     padding: 1.0em 3.5em;
     text-decoration: none;
+    text-transform: uppercase;
     font-size: large;
     font-weight: bold;
     &:hover, &:active, &:focus {
-      color: @orange2;
-      fill: @orange2;
+      border-bottom: 7px solid @deepOrangeA400;
+      color: @deepOrangeA400;
+      fill: @deepOrangeA400;
       font-weight: bold;
       text-decoration: none;
       i.nav-icon {
@@ -74,6 +78,6 @@
 }
 
 nav {
-  .translucent-black;
+  //.translucent-black;
   .navbar-fonts;
 }

@@ -18,11 +18,10 @@
   transition: all 0.5s ease-out;
 }
 .navbar {
-  -webkit-transition: all 0.5s ease-out;
-  -moz-transition: all 0.5s ease-out;
-  -ms-transition: all 0.5s ease-out;
-  -o-transition: all 0.5s ease-out;
-  transition: all 0.5s ease-out;
+  background-color: #00796B;
+  position: fixed;
+  top: 0;
+  z-index: 10;
   text-align: center;
   width: 100%;
 }
@@ -36,19 +35,20 @@
 }
 .navbar-fonts a {
   color: white;
-  fill: #175d63;
   display: block;
   line-height: 2em;
   padding: 1.0em 3.5em;
   text-decoration: none;
+  text-transform: uppercase;
   font-size: large;
   font-weight: bold;
 }
 .navbar-fonts a:hover,
 .navbar-fonts a:active,
 .navbar-fonts a:focus {
-  color: #b73800;
-  fill: #b73800;
+  border-bottom: 7px solid #FF6D00;
+  color: #FF6D00;
+  fill: #FF6D00;
   font-weight: bold;
   text-decoration: none;
 }
@@ -69,24 +69,22 @@
   font-size: 30pt;
   margin-bottom: 20px;
 }
-nav {
-  background-color: rgba(0, 0, 0, 0.5);
-}
 nav a {
   color: white;
-  fill: #175d63;
   display: block;
   line-height: 2em;
   padding: 1.0em 3.5em;
   text-decoration: none;
+  text-transform: uppercase;
   font-size: large;
   font-weight: bold;
 }
 nav a:hover,
 nav a:active,
 nav a:focus {
-  color: #b73800;
-  fill: #b73800;
+  border-bottom: 7px solid #FF6D00;
+  color: #FF6D00;
+  fill: #FF6D00;
   font-weight: bold;
   text-decoration: none;
 }
@@ -212,8 +210,8 @@ body {
   box-shadow: 5px 5px 5px -2px rgba(50, 50, 50, 0.2);
 }
 .gray {
-  -webkit-filter: grayscale(70%) brightness(0.55);
-  -filter: grayscale(70%) brightness(0.55);
+  -webkit-filter: grayscale(50%) brightness(0.55);
+  -filter: grayscale(50%) brightness(0.55);
 }
 .button {
   background-color: transparent;
@@ -277,8 +275,11 @@ body {
 .img-background {
   height: 100%;
   width: 100%;
-  -webkit-filter: grayscale(70%) brightness(0.55);
-  -filter: grayscale(70%) brightness(0.55);
+  z-index: -1;
+  position: fixed;
+  top: 0;
+  -webkit-filter: grayscale(50%) brightness(0.55);
+  -filter: grayscale(50%) brightness(0.55);
   background-image: url('../img/matt-colleen-sq.jpg');
   background-position: center left;
   background-size: cover;
