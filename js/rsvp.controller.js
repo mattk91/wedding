@@ -9,12 +9,13 @@
     function RsvpController($scope, $http, $httpParamSerializerJQLike) {
         var mailerUrl = 'mail/submit.php';
         var successContainsStr = 'Thanks! We\'ve received your information';
-        $scope.formData = {
-            recipients : "mattk91@gmail.com",
-            subject: "Online RSVP"
-        };
+        $scope.email = 'matt91@gmail.com';
         $scope.submitted = false;
         $scope.processing = false;
+        $scope.formData = {
+            recipients : $scope.email,
+            subject: "Online RSVP"
+        };
 
         $scope.submitRsvp = function() {
             process();

@@ -297,3 +297,11 @@ body {
 .logo-link {
   text-align: center;
 }
+.status-message {
+  text-align: center;
+  font-size: 72px;
+}
+.status-message i {
+  font-size: 100px;
+  margin-right: 50px;
+}
