@@ -1,28 +1,28 @@
 <div class="content content-teal" ng-controller="RsvpController">
 
 <h1>RSVP</h1>
-    <form class="form-horizontal" name="RsvpForm" ng-submit="submitRsvp()">
-        <input type="hidden" name="recipients" value="mattk91@gmail.com" />
-        <input type="hidden" name="subject" value="Online RSVP" />
+    <form class="form-horizontal" ng-submit="submitRsvp()">
+        <input type="hidden" name="recipients" ng-model="formData.recipients" value="mattk91@gmail.com" />
+        <input type="hidden" name="subject" ng-model="formData.subject" value="Online RSVP" />
         <div class="form-group">
             <label for="name" class="col-sm-3 control-label">Name</label>
             <div class="col-sm-9">
-                <input id="name" name="name" class="form-control" title="Name" type="text" placeholder="Your name">
+                <input id="name" name="name" ng-model="formData.name" class="form-control" title="Name" type="text" placeholder="Your name">
             </div>
         </div>
 
         <div class="form-group">
             <label class="col-sm-3 control-label">Response</label>
             <div class="col-sm-9">
-                <label class="radio-inline"><input type="radio" name="response" value="Y">Will be there!</label>
-                <label class="radio-inline"><input type="radio" name="response" value="N">Can't make it</label>
+                <label class="radio-inline"><input type="radio" name="response" value="Yes" ng-model="formData.response">Will be there!</label>
+                <label class="radio-inline"><input type="radio" name="response" value="No" ng-model="formData.response">Can't make it</label>
             </div>
         </div>
 
         <div class="form-group">
             <label for="comment" class="col-sm-3 control-label">Comment</label>
             <div class="col-sm-9">
-                <textarea name="comment" class="form-control" id="comment" rows=4 cols=50 title="Comment" placeholder="Add a comment to your RSVP"></textarea>
+                <textarea name="comment" ng-model="formData.comment" class="form-control" id="comment" rows=4 cols=50 title="Comment" placeholder="Add a comment to your RSVP"></textarea>
             </div>
         </div>
 
