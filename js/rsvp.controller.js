@@ -8,7 +8,7 @@
     RsvpController.$inject = ['$scope', '$http', '$httpParamSerializerJQLike'];
     function RsvpController($scope, $http, $httpParamSerializerJQLike) {
         var mailerUrl = 'mail/submit.php';
-        var successContainsStr = 'Thanks! We\'ve received your information';
+        var successContainsStr = 'Thanks!  We\'ve received your information';
         $scope.email = 'mattk91@gmail.com';
         $scope.submitted = false;
         $scope.processing = false;
