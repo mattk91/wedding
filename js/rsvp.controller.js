@@ -32,7 +32,7 @@
         };
 
         function isSuccess(data) {
-            return !!data.indexOf(successContainsStr);
+            return data.indexOf(successContainsStr) > 0;
         }
 
         function success() {
