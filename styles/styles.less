@@ -6,20 +6,44 @@
   background-color: transparent;
   cursor: pointer;
   font-weight:bold;
+  font-size: 16px;
   padding: 10px;
   border: 2px solid @teal500;
-  color: @teal500;
   &:hover, &:active {
-    color: @deepOrangeA400;
-    border-color: @deepOrangeA400;
     text-decoration: none;
   }
   .gentle-shadow-bottom-right;
 }
 
+.content:nth-of-type(1) {
+  // todo not work
+  .gentle-shadow-top;
+}
+
+.form-control {
+  border: 5px solid @teal300;
+  &[type="text"] {
+    padding-top: 18px;
+    padding-bottom: 18px;
+  }
+}
+
 .content-white {
   background: white url('../img/square_bg.png') repeat;
-  border-top: 5px solid @teal500;
+  &:first-of-type {
+    border-top: 5px solid @teal500;
+  }
+  h1 {
+    color: @deepOrangeA400;
+  }
+  .button {
+    border-color: @teal500;
+    color: @teal500;
+    &:hover, &:active {
+      color: @deepOrangeA400;
+      border-color: @deepOrangeA400;
+    }
+  }
 }
 
 .content-teal {
@@ -28,12 +52,20 @@
   h1, h2, h3 {
     color: white;
   }
+  .button {
+    border-color: white;
+    color: white;
+    &:hover, &:active {
+      color: @dark-grey;
+      border-color: @dark-grey;
+    }
+  }
 }
 
 .img-background {
   height: 100%;
   width: 100%;
-  position: absolute;
+  //position: absolute;
   .gray;
   background-image: url('../img/matt-colleen-sq.jpg');
   background-position: center left;
@@ -41,4 +73,17 @@
   @media screen and (min-aspect-ratio: 6/4) {
     background-image: url('../img/panama-landscape.jpg');
   }
+}
+
+.logo-white {
+  margin-top: 50px;
+  &:not(:hover) {
+    path {
+      fill: white !important;
+    }
+  }
+}
+
+.logo-link {
+  text-align: center;
 }
