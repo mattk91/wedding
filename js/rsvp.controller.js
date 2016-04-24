@@ -8,7 +8,10 @@
     RsvpController.$inject = ['$scope', '$rootScope', '$http'];
     function RsvpController($scope, $rootScope, $http) {
         var mailerUrl = 'mail/submit.php';
-        $scope.formData = {};
+        $scope.formData = {
+            recipients : "mattk91@gmail.com",
+            subject: "Online RSVP"
+        };
 
         $scope.submitRsvp = function() {
             $http.post(mailerUrl, $scope.formData, {headers : {
