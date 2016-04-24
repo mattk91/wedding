@@ -1,7 +1,7 @@
 <div class="content content-teal" ng-controller="RsvpController">
 
 <h1>RSVP</h1>
-    <form class="form-horizontal" ng-submit="submitRsvp()">
+    <form class="form-horizontal" ng-submit="submitRsvp()" ng-if="!submitted">
         <div class="form-group">
             <label for="name" class="col-sm-3 control-label">Name</label>
             <div class="col-sm-9">
@@ -30,4 +30,13 @@
             </div>
         </div>
     </form>
+    <div ng-if="processing">
+        Processing
+    </div>
+    <div ng-if="submitted && success">
+        {{message}}
+    </div>
+    <div ng-if="submitted && !success">
+        {{message}}
+    </div>
 </div>

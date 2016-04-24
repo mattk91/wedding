@@ -13,9 +13,11 @@
             recipients : "mattk91@gmail.com",
             subject: "Online RSVP"
         };
-        $scope.message = '';
+        $scope.submitted = false;
+        $scope.processing = false;
 
         $scope.submitRsvp = function() {
+            process();
             $http.post(
                 mailerUrl,
                 $httpParamSerializerJQLike($scope.formData),
@@ -28,20 +30,24 @@
             }).error(failure);
         };
 
-        function isSuccess() {
+        function isSuccess(data) {
             return !!data.indexOf(successContainsStr);
         }
 
         function success() {
-            $scope.message = 'Yay!';
-            // show message
+            $scope.submitted = true;
+            $scope.processing = false;
+            $scope.success = true;
         }
 
         function failure() {
-            $scope.message = 'Boo!';
-            // todo show message
+            $scope.submitted = true;
+            $scope.processing = false;
+            $scope.success = false;
         }
 
-        // todo custom parse response as it always shows a 200 even if there's an error ....
+        function process() {
+            $scope.processing = true;
+        }
     }
 })();
