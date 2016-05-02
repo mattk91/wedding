@@ -1,0 +1,106 @@
+.gentle-shadow-top {
+  box-shadow: 0 -5px 5px -2px rgba(50, 50, 50, 0.2);
+}
+.gentle-shadow-bottom {
+  box-shadow: 0 5px 5px -2px rgba(50, 50, 50, 0.2);
+}
+.gentle-shadow-bottom-right {
+  box-shadow: 5px 5px 5px -2px rgba(50, 50, 50, 0.2);
+}
+.gray {
+  -webkit-filter: grayscale(50%) brightness(0.55);
+  -filter: grayscale(50%) brightness(0.55);
+}
+.button {
+  background-color: transparent;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 16px;
+  padding: 10px;
+  border: 2px solid #009688;
+  box-shadow: 5px 5px 5px -2px rgba(50, 50, 50, 0.2);
+}
+.button:hover,
+.button:active {
+  text-decoration: none;
+}
+.content:nth-of-type(1) {
+  box-shadow: 0 -5px 5px -2px rgba(50, 50, 50, 0.2);
+}
+.form-control {
+  border: 5px solid #4DB6AC;
+}
+.form-control[type="text"] {
+  padding-top: 18px;
+  padding-bottom: 18px;
+}
+.content-white {
+  background: white url('../img/square_bg.png') repeat;
+}
+.content-white:first-of-type {
+  border-top: 5px solid #009688;
+}
+.content-white h1 {
+  color: #FF6D00;
+}
+.content-white .button {
+  border-color: #009688;
+  color: #009688;
+}
+.content-white .button:hover,
+.content-white .button:active {
+  color: #FF6D00;
+  border-color: #FF6D00;
+}
+.content-teal {
+  background: #009688 none;
+  color: white;
+}
+.content-teal h1,
+.content-teal h2,
+.content-teal h3 {
+  color: white;
+}
+.content-teal .button {
+  border-color: white;
+  color: white;
+}
+.content-teal .button:hover,
+.content-teal .button:active {
+  color: #333;
+  border-color: #333;
+}
+.img-background {
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  position: fixed;
+  top: 0;
+  -webkit-filter: grayscale(50%) brightness(0.55);
+  -filter: grayscale(50%) brightness(0.55);
+  background-image: url('../img/matt-colleen-sq.jpg');
+  background-position: center left;
+  background-size: cover;
+}
+@media screen and (min-aspect-ratio: 6/4) {
+  .img-background {
+    background-image: url('../img/panama-landscape.jpg');
+  }
+}
+.logo-white {
+  margin-top: 50px;
+}
+.logo-white:not(:hover) path {
+  fill: white !important;
+}
+.logo-link {
+  text-align: center;
+}
+.status-message {
+  text-align: center;
+  font-size: 72px;
+}
+.status-message i {
+  font-size: 100px;
+  margin-right: 50px;
+}
