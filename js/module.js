@@ -1,4 +1,4 @@
 (function() {
     angular
-        .module('app', ['ngRoute', 'ngAnimate']);
+        .module('app', ['ngRoute', 'ngAnimate', 'stellar.directives']);
 })();
