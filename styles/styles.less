@@ -15,11 +15,6 @@
   .gentle-shadow-bottom-right;
 }
 
-.content:nth-of-type(1) {
-  // todo not work
-  .gentle-shadow-top;
-}
-
 .form-control {
   border: 5px solid @teal300;
   &[type="text"] {
@@ -28,11 +23,12 @@
   }
 }
 
+.content-holder > ng-include:first-of-type > .content {
+    .harder-shadow-top;
+}
+
 .content-white {
   background: white url('../img/square_bg.png') repeat;
-  &:first-of-type {
-    border-top: 5px solid @teal500;
-  }
   h1 {
     color: @deepOrangeA400;
   }
@@ -48,7 +44,9 @@
 
 .content-teal {
   background: @teal500 none;
+  z-index: 10;
   color: white;
+  .gentle-shadow-top-bottom;
   h1, h2, h3 {
     color: white;
   }

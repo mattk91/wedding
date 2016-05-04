@@ -1,8 +1,14 @@
 .gentle-shadow-top {
   box-shadow: 0 -5px 5px -2px rgba(50, 50, 50, 0.2);
 }
+.harder-shadow-top {
+  box-shadow: 0 -5px 10px 0 rgba(50, 50, 50, 0.5);
+}
 .gentle-shadow-bottom {
   box-shadow: 0 5px 5px -2px rgba(50, 50, 50, 0.2);
+}
+.gentle-shadow-top-bottom {
+  box-shadow: 0 5px 5px -2px rgba(50, 50, 50, 0.2), 0 -5px 5px -2px rgba(50, 50, 50, 0.2);
 }
 .gentle-shadow-bottom-right {
   box-shadow: 5px 5px 5px -2px rgba(50, 50, 50, 0.2);
@@ -16,7 +22,7 @@ body {
   padding: 0;
 }
 .content {
-  z-index: 1;
+  position: relative;
   padding: 50px 20%;
   width: 100%;
 }
