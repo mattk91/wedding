@@ -23,6 +23,21 @@
                 <textarea name="comment" ng-model="formData.comment" class="form-control" id="comment" rows=4 cols=50 title="Comment" placeholder="Add a comment to your RSVP"></textarea>
             </div>
         </div>
+        <div class="form-group">
+            <label for="song" class="col-sm-3 control-label">Song Suggestion</label>
+            <div class="col-sm-9">
+                <input id="song" name="song" ng-model="formData.song" class="form-control" title="Song" type="text" placeholder="Suggest a song to add to our evening playlist!">
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label class="col-sm-3 control-label">Welcome to the US party</label>
+            <div class="col-sm-9">
+                <div>We're planning on throwing a party in the USA when Matt moves over some time in 2017 - we don't know
+                    when this will be yet but if you want us to keep you in the loop, tick this box!</div>
+                <label class="checkbox-inline"><input type="checkbox" name="response" value="Yes" ng-model="formData.response">I'm interested in this!</label>
+            </div>
+        </div>
 
         <div class="form-group">
             <div class="col-sm-offset-3 col-sm-9">
