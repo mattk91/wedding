@@ -27,7 +27,7 @@
 .navbar {
   background-color: @teal700;
   .navbar-top;
-  //.smooth-transition;
+  border-width: 0;
   text-align: center;
   width: 100%;
   ul {
@@ -39,11 +39,9 @@
     }
   }
 }
-
 .navbar-fonts {
   a {
     color: white;
-    //fill: @teal;
     display: block;
     line-height: 2em;
     padding: 1.0em 3.5em;
@@ -51,8 +49,9 @@
     text-transform: uppercase;
     font-size: large;
     font-weight: bold;
-    &:hover, &:active, &:focus {
+    &:hover, &:active, &:focus, &.active {
       border-bottom: 7px solid @deepOrangeA400;
+      padding-bottom: 11px;
       color: @deepOrangeA400;
       fill: @deepOrangeA400;
       font-weight: bold;

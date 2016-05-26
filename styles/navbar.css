@@ -22,6 +22,7 @@
   position: fixed;
   top: 0;
   z-index: 10;
+  border-width: 0;
   text-align: center;
   width: 100%;
 }
@@ -45,8 +46,10 @@
 }
 .navbar-fonts a:hover,
 .navbar-fonts a:active,
-.navbar-fonts a:focus {
+.navbar-fonts a:focus,
+.navbar-fonts a.active {
   border-bottom: 7px solid #FF6D00;
+  padding-bottom: 11px;
   color: #FF6D00;
   fill: #FF6D00;
   font-weight: bold;
@@ -54,7 +57,8 @@
 }
 .navbar-fonts a:hover i.nav-icon,
 .navbar-fonts a:active i.nav-icon,
-.navbar-fonts a:focus i.nav-icon {
+.navbar-fonts a:focus i.nav-icon,
+.navbar-fonts a.active i.nav-icon {
   color: #b73800;
 }
 .navbar-fonts a svg {
@@ -81,8 +85,10 @@ nav a {
 }
 nav a:hover,
 nav a:active,
-nav a:focus {
+nav a:focus,
+nav a.active {
   border-bottom: 7px solid #FF6D00;
+  padding-bottom: 11px;
   color: #FF6D00;
   fill: #FF6D00;
   font-weight: bold;
@@ -90,7 +96,8 @@ nav a:focus {
 }
 nav a:hover i.nav-icon,
 nav a:active i.nav-icon,
-nav a:focus i.nav-icon {
+nav a:focus i.nav-icon,
+nav a.active i.nav-icon {
   color: #b73800;
 }
 nav a svg {
