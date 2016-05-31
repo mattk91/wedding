@@ -35,6 +35,11 @@ body {
 .content img {
   width: 100%;
 }
+@media (max-width: 800px) {
+  .content img {
+    display: none;
+  }
+}
 .content .pull-bottom-right {
   position: absolute;
   right: 0;
