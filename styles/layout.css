@@ -26,6 +26,12 @@ body {
   padding: 50px 20%;
   width: 100%;
 }
+@media (max-width: 800px) {
+  .content {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+}
 .content img {
   width: 100%;
 }
