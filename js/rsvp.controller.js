@@ -9,7 +9,7 @@
     function RsvpController($scope, $http, $httpParamSerializerJQLike) {
         var mailerUrl = 'mail/submit.php';
         var successContainsStr = 'Thanks!  We\'ve received your information';
-        $scope.email = 'mattk91@gmail.com';
+        $scope.email = 'mncwedding2016@gmail.com';
         $scope.submitted = false;
         $scope.processing = false;
         $scope.formData = {

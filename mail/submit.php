@@ -440,10 +440,10 @@ $EMAIL_NAME = "^[-a-z0-9._]+"; /* the '^' is an important security feature! */
 
 /* Help: http://www.tectite.com/fmdoc/target_email.php */
 /* $TARGET_EMAIL = array($EMAIL_NAME . "@yourhost\.com$"); */
-$TARGET_EMAIL = array("^mattk91@gmail\.com$");
+$TARGET_EMAIL = array("^mncwedding2016@gmail\.com$");
 
 /* Help: http://www.tectite.com/fmdoc/def_alert.php */
-$DEF_ALERT = "mattk91@gmail.com";
+$DEF_ALERT = "mncwedding2016@gmail.com";
 
 /* Help: http://www.tectite.com/fmdoc/site_domain.php */
 $SITE_DOMAIN = ""; /* your website domain name */
