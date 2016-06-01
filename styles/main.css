@@ -277,6 +277,13 @@ body {
   left: 75px;
   z-index: -1;
 }
+@media (max-width: 768px) {
+  .mc-logo {
+    top: 300px;
+    width: 80%;
+    left: 10%;
+  }
+}
 .logo-white {
   margin-top: 50px;
 }
