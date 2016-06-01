@@ -1,40 +1,25 @@
-.navbar-bottom {
-  position: absolute;
-  top: 80%;
-}
-.navbar-top {
-  position: fixed;
-  top: 0;
-  z-index: 10;
-}
-.translucent-black {
-  background-color: rgba(0, 0, 0, 0.5);
-}
-.smooth-transition {
-  -webkit-transition: all 0.5s ease-out;
-  -moz-transition: all 0.5s ease-out;
-  -ms-transition: all 0.5s ease-out;
-  -o-transition: all 0.5s ease-out;
-  transition: all 0.5s ease-out;
-}
 .navbar {
-  background-color: #00796B;
   position: fixed;
   top: 0;
   z-index: 10;
+  background-color: #00796B;
+  border-radius: 0;
   border-width: 0;
   text-align: center;
   width: 100%;
 }
-.navbar ul {
-  margin: 0;
-  padding: 0;
+.navbar .navbar-collapse {
+  border-color: #4DB6AC;
 }
-.navbar ul li {
-  display: inline-block;
-  list-style-type: none;
+.navbar .navbar-header .navbar-toggle .icon-bar {
+  background-color: white;
 }
-.navbar-fonts a {
+.navbar .navbar-header .navbar-toggle:focus,
+.navbar .navbar-header .navbar-toggle:hover,
+.navbar .navbar-header .navbar-toggle:active {
+  background-color: #009688;
+}
+.navbar .nav li a {
   color: white;
   display: block;
   line-height: 2em;
@@ -44,69 +29,37 @@
   font-size: large;
   font-weight: bold;
 }
-.navbar-fonts a:hover,
-.navbar-fonts a:active,
-.navbar-fonts a:focus,
-.navbar-fonts a.active {
-  border-bottom: 7px solid #FF6D00;
-  padding-bottom: 11px;
-  color: #FF6D00;
-  fill: #FF6D00;
-  font-weight: bold;
-  text-decoration: none;
-}
-.navbar-fonts a:hover i.nav-icon,
-.navbar-fonts a:active i.nav-icon,
-.navbar-fonts a:focus i.nav-icon,
-.navbar-fonts a.active i.nav-icon {
-  color: #b73800;
-}
-.navbar-fonts a svg {
-  margin-top: -10px;
-  margin-bottom: -30px;
-  display: block;
-  width: 85px;
-}
-.navbar-fonts a i.nav-icon {
-  color: teal;
-  display: block;
-  font-size: 30pt;
-  margin-bottom: 20px;
-}
-nav a {
+.navbar .nav li a:hover,
+.navbar .nav li a:active,
+.navbar .nav li a:focus,
+.navbar .nav li a.active {
+  background-color: #009688;
   color: white;
-  display: block;
-  line-height: 2em;
-  padding: 1.0em 3.5em;
-  text-decoration: none;
-  text-transform: uppercase;
-  font-size: large;
-  font-weight: bold;
-}
-nav a:hover,
-nav a:active,
-nav a:focus,
-nav a.active {
-  border-bottom: 7px solid #FF6D00;
-  padding-bottom: 11px;
-  color: #FF6D00;
-  fill: #FF6D00;
   font-weight: bold;
   text-decoration: none;
 }
-nav a:hover i.nav-icon,
-nav a:active i.nav-icon,
-nav a:focus i.nav-icon,
-nav a.active i.nav-icon {
-  color: #b73800;
+.navbar .navbar-brand {
+  color: #4DB6AC;
+  cursor: default;
 }
-nav a svg {
+@media (min-width: 768px) {
+  .navbar .navbar-brand {
+    padding: 25px;
+  }
+}
+.navbar .navbar-brand:hover,
+.navbar .navbar-brand:active,
+.navbar .navbar-brand:focus,
+.navbar .navbar-brand.active {
+  color: #4DB6AC;
+}
+.navbar .navbar-fonts svg {
   margin-top: -10px;
   margin-bottom: -30px;
   display: block;
   width: 85px;
 }
-nav a i.nav-icon {
+.navbar .navbar-fonts i.nav-icon {
   color: teal;
   display: block;
   font-size: 30pt;

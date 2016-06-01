@@ -1,66 +1,58 @@
 @import "colours.less";
 
-.navbar-bottom {
-  position: absolute;
-  //bottom: 5%;
-  top: 80%;
-}
-
-.navbar-top {
+.navbar {
   position: fixed;
   top: 0;
   z-index: 10;
-  //bottom: auto;
-}
-
-.translucent-black {
-  background-color: rgba(0, 0, 0, 0.5);
-}
-
-.smooth-transition {
-  -webkit-transition: all 0.5s ease-out;
-  -moz-transition: all 0.5s ease-out;
-  -ms-transition: all 0.5s ease-out;
-  -o-transition: all 0.5s ease-out;
-  transition: all 0.5s ease-out;
-}
-.navbar {
   background-color: @teal700;
-  .navbar-top;
+  border-radius: 0;
   border-width: 0;
   text-align: center;
   width: 100%;
-  ul {
-    margin: 0;
-    padding: 0;
-    li {
-      display: inline-block;
-      list-style-type: none;
+  .navbar-collapse {
+    border-color: @teal300;
+  }
+  .navbar-header .navbar-toggle {
+    .icon-bar {
+      background-color: white;
+    }
+    &:focus, &:hover, &:active {
+      background-color: @teal500;
     }
   }
-}
-.navbar-fonts {
-  a {
-    color: white;
-    display: block;
-    line-height: 2em;
-    padding: 1.0em 3.5em;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-size: large;
-    font-weight: bold;
-    &:hover, &:active, &:focus, &.active {
-      border-bottom: 7px solid @deepOrangeA400;
-      padding-bottom: 11px;
-      color: @deepOrangeA400;
-      fill: @deepOrangeA400;
-      font-weight: bold;
-      text-decoration: none;
-      i.nav-icon {
-        color: @orange2;
-      }
 
+  .nav {
+    li {
+      a {
+        color: white;
+        display: block;
+        line-height: 2em;
+        padding: 1.0em 3.5em;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: large;
+        font-weight: bold;
+        &:hover, &:active, &:focus, &.active {
+          background-color: @teal500;
+          color: white;
+          font-weight: bold;
+          text-decoration: none;
+        }
+      }
     }
+  }
+  .navbar-brand {
+    color: @teal300;
+    @media (min-width: 768px) {
+      padding:25px;
+    }
+    cursor: default;
+    &:hover, &:active, &:focus, &.active {
+      color: @teal300;
+    }
+  }
+
+  .navbar-fonts {
     svg {
       margin-top: -10px;
       margin-bottom: -30px;
@@ -71,12 +63,7 @@
       color: teal;
       display: block;
       font-size: 30pt;
-      margin-bottom:20px;
+      margin-bottom: 20px;
     }
   }
-}
-
-nav {
-  //.translucent-black;
-  .navbar-fonts;
 }
