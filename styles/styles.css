@@ -91,6 +91,21 @@
     background-image: url('../img/panama-landscape.jpg');
   }
 }
+@media (max-width: 768px) {
+  .img-background {
+    margin-top: 50px;
+    background-image: url('../img/panama-portrait.jpg');
+    background-position: top center;
+  }
+}
+.mc-logo {
+  width: 500px;
+  max-width: 100%;
+  position: absolute;
+  top: 200px;
+  left: 75px;
+  z-index: -1;
+}
 .logo-white {
   margin-top: 50px;
 }
@@ -99,6 +114,9 @@
 }
 .logo-link {
   text-align: center;
+}
+.logo-link svg {
+  width: 100%;
 }
 .status-message {
   text-align: center;
