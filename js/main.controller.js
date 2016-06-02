@@ -7,7 +7,7 @@
 
     MainController.$inject = ['$scope', 'stellar'];
     function MainController($scope, stellar) {
-        stellar.against(window);
+        //stellar.against(window);
     }
 
 })();
