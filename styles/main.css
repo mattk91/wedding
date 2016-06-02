@@ -144,8 +144,15 @@ body {
 .content .img-column img {
   width: 100%;
 }
-.content .pull-bottom-right {
-  margin-top: 45px;
+.content .map-button-col {
+  margin-top: 30px;
+  width: 100%;
+}
+@media (min-width: 768px) {
+  .content .map-button-col {
+    margin-top: 45px;
+    text-align: right;
+  }
 }
 .sub-content {
   display: flex;
