@@ -87,7 +87,7 @@
   background-repeat: no-repeat;
   background-size: 100% auto;
 }
-@media (min-aspect-ratio: 6/4) {
+@media (min-aspect-ratio: 6/4) and (min-width: 1025px) {
   .img-background {
     background-image: url('../img/panama-landscape-wide.jpg');
     padding-top: 47.7%;
@@ -118,9 +118,23 @@
 }
 @media (max-width: 768px) {
   .mc-logo {
-    top: 300px;
+    top: 65%;
     width: 80%;
     left: 10%;
+  }
+}
+@media (max-width: 768px) and (orientation: landscape) {
+  .mc-logo {
+    top: 38%;
+    left: 5%;
+    width: 40%;
+  }
+}
+@media (max-width: 1024px) and (orientation: landscape) {
+  .mc-logo {
+    top: 24%%;
+    left: 5%;
+    width: 40%;
   }
 }
 .logo-white {
