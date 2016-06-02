@@ -89,35 +89,38 @@
     }
     background-size: cover;
   }
-
 }
 
 .mc-logo{
-  width: 500px;
+  //width: 500px;
   max-width: 100%;
   position: absolute;
-  top: 200px;
-  left:75px;
+  //top: 200px;
+  left:5%;
   z-index: 10;
-  // Use a smaller logo for phones and portrait iPad
-  @media (max-width: 768px) {
-    top: 65%;
-    width:80%;
-    left: 10%;
+  width: 40%;
+  @media (orientation:portrait) {
+    // Portrait phone
+    @media (max-width: 767px) {
+      top: 65%;
+      width: 80%;
+      left: 10%;
+    }
+    // Portrait iPad
+    @media (min-width: 768px) and (max-width: 1024px) {
+      top: 17%;
+    }
   }
 
-  // Landscape phones
-  @media (max-width: 768px) and (orientation: landscape) {
-    top: 38%;
-    left: 5%;
-    width: 40%;
-  }
-
-  // Landscape iPad
-  @media (max-width: 1024px) and (orientation: landscape) {
-    top: 24%%;
-    left: 5%;
-    width: 40%;
+  @media (orientation: landscape) {
+    // Landscape phones
+    @media (max-width: 767px) {
+      top: 38%;
+    }
+    // Landscape iPad
+    @media (min-width: 768px) and (max-width: 1024px) {
+      top: 24%;
+    }
   }
 }
 

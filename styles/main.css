@@ -312,32 +312,36 @@ body {
   }
 }
 .mc-logo {
-  width: 500px;
   max-width: 100%;
   position: absolute;
-  top: 200px;
-  left: 75px;
+  left: 5%;
   z-index: 10;
+  width: 40%;
 }
-@media (max-width: 768px) {
+@media (orientation: portrait) {
+}
+@media (orientation: portrait) and (max-width: 767px) {
   .mc-logo {
     top: 65%;
     width: 80%;
     left: 10%;
   }
 }
-@media (max-width: 768px) and (orientation: landscape) {
+@media (orientation: portrait) and (min-width: 768px) and (max-width: 1024px) {
   .mc-logo {
-    top: 38%;
-    left: 5%;
-    width: 40%;
+    top: 17%;
   }
 }
-@media (max-width: 1024px) and (orientation: landscape) {
+@media (orientation: landscape) {
+}
+@media (orientation: landscape) and (max-width: 767px) {
   .mc-logo {
-    top: 24%%;
-    left: 5%;
-    width: 40%;
+    top: 38%;
+  }
+}
+@media (orientation: landscape) and (min-width: 768px) and (max-width: 1024px) {
+  .mc-logo {
+    top: 24%;
   }
 }
 .logo-white {
