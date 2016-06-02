@@ -12,12 +12,18 @@
   .navbar-collapse {
     border-color: @teal300;
   }
-  .navbar-header .navbar-toggle {
-    .icon-bar {
-      background-color: white;
+  .navbar-header {
+    // Don't show the 'nav brand' on iPad size screen
+    @media (max-width: 1024px) and (min-width: 768px) {
+      display: none;
     }
-    &:focus, &:hover, &:active {
-      background-color: @teal500;
+    .navbar-toggle {
+      .icon-bar {
+        background-color: white;
+      }
+      &:focus, &:hover, &:active {
+        background-color: @teal500;
+      }
     }
   }
 
@@ -32,6 +38,15 @@
         text-transform: uppercase;
         font-size: large;
         font-weight: bold;
+        // Reduce padding between nav elements for small screens (landscape iPad and below)
+        @media (max-width: 1024px) {
+          padding: 1.0em 2.7em;
+        }
+        // Shrink even further for portrait iPad
+        @media (min-width: 768px ) and (max-width: 1023px) {
+          padding: 1.0em 1.7em;
+          font-size: medium;
+        }
         &:hover, &:active, &:focus, &.active {
           background-color: @teal500;
           color: white;

@@ -11,7 +11,8 @@ body {
   position: relative;
   padding: 50px 20%;
   z-index: 20;
-  @media (max-width: 800px) {
+  // Decrease padding for iPad portrait or smaller
+  @media (max-width: 768px) {
     padding-left: 5%;
     padding-right: 5%;
 
@@ -19,7 +20,8 @@ body {
 
   width: 100%;
   .img-column {
-    @media (max-width: 800px) {
+    // Don't show the event images for iPad portrait or smaller
+    @media (max-width: 768px) {
       display: none;
     }
     img {

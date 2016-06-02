@@ -11,6 +11,11 @@
 .navbar .navbar-collapse {
   border-color: #4DB6AC;
 }
+@media (max-width: 1024px) and (min-width: 768px) {
+  .navbar .navbar-header {
+    display: none;
+  }
+}
 .navbar .navbar-header .navbar-toggle .icon-bar {
   background-color: white;
 }
@@ -28,6 +33,17 @@
   text-transform: uppercase;
   font-size: large;
   font-weight: bold;
+}
+@media (max-width: 1024px) {
+  .navbar .nav li a {
+    padding: 1.0em 2.7em;
+  }
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  .navbar .nav li a {
+    padding: 1.0em 1.7em;
+    font-size: medium;
+  }
 }
 .navbar .nav li a:hover,
 .navbar .nav li a:active,
@@ -138,13 +154,13 @@ body {
   z-index: 20;
   width: 100%;
 }
-@media (max-width: 800px) {
+@media (max-width: 768px) {
   .content {
     padding-left: 5%;
     padding-right: 5%;
   }
 }
-@media (max-width: 800px) {
+@media (max-width: 768px) {
   .content .img-column {
     display: none;
   }
@@ -274,12 +290,12 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
 }
-@media screen and (min-aspect-ratio: 6/4) {
+@media (min-aspect-ratio: 6/4) {
   .img-background {
     background-image: url('../img/panama-landscape.jpg');
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) and (orientation: portrait) {
   .img-background {
     margin-top: 50px;
     background-image: url('../img/rsz_panama-portrait-narrow.jpg');

@@ -71,11 +71,13 @@
   background-position: center left;
   background-repeat: no-repeat;
   background-size: cover;
-  @media screen and (min-aspect-ratio: 6/4) {
+  // Use a 'widescreen' background image for larger / wider displays.
+  @media (min-aspect-ratio: 6/4) {
     background-image: url('../img/panama-landscape.jpg');
   }
 
-  @media (max-width: 768px) {
+  // Use a narrow portrait for phones in portrait mode
+  @media (max-width: 767px) and (orientation: portrait) {
     //background-position: -406px -101px;
     margin-top: 50px;
     background-image: url('../img/rsz_panama-portrait-narrow.jpg');
@@ -91,6 +93,7 @@
   top: 200px;
   left:75px;
   z-index: 10;
+  // Use a smaller logo for phones and portrait iPad
   @media (max-width: 768px) {
     top: 300px;
     width:80%;
