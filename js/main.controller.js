@@ -5,9 +5,10 @@
         .module('app')
         .controller('MainController', MainController);
 
-    MainController.$inject = ['$scope'];
-    function MainController($scope) {
+    MainController.$inject = ['$scope', '$location'];
+    function MainController($scope, $location) {
         //stellar.against(window);
+        $location.hash('');
     }
 
 })();

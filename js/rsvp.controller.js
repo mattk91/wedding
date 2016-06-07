@@ -22,7 +22,6 @@
             {value: 'titanic', name: 'Titanic Trail'}
         ];
         $scope.formData.tour = $scope.tourOptions[0].value;
-        $anchorScroll('rsvp');
         $scope.submitRsvp = function() {
             process();
             $http.post(
@@ -45,16 +44,19 @@
             $scope.submitted = true;
             $scope.processing = false;
             $scope.success = true;
+            $anchorScroll('rsvp');
         }
 
         function failure() {
             $scope.submitted = true;
             $scope.processing = false;
             $scope.success = false;
+            $anchorScroll('rsvp');
         }
 
         function process() {
             $scope.processing = true;
+            $anchorScroll('rsvp');
         }
     }
 })();
