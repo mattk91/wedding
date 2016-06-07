@@ -16,6 +16,12 @@
             recipients : $scope.email,
             subject: "Online RSVP"
         };
+        $scope.tourOptions = [
+            {value: 'none', name: 'No tour for me thanks'},
+            {value: 'brewery', name: 'Hidden History / Brewery'},
+            {value: 'titanic', name: 'Titanic Trail'}
+        ];
+        $scope.formData.tour = $scope.tourOptions[0].value;
 
         $scope.submitRsvp = function() {
             process();

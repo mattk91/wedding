@@ -253,6 +253,10 @@ a {
   padding-top: 18px;
   padding-bottom: 18px;
 }
+select.form-control {
+  height: 46px;
+  margin-top: 7px;
+}
 .content-holder > ng-include:first-of-type > .content {
   box-shadow: 0 -5px 10px 0 rgba(50, 50, 50, 0.5);
 }
@@ -280,6 +284,9 @@ a {
 .content-teal h2,
 .content-teal h3 {
   color: white;
+}
+.content-teal a {
+  color: black;
 }
 .content-teal .button {
   border-color: white;
