@@ -13,8 +13,8 @@
     border-color: @teal300;
   }
   .navbar-header {
-    // Don't show the 'nav brand' on iPad size screen
-    @media (max-width: 1024px) and (min-width: 768px) {
+    // Don't show the 'nav brand' on small size screen
+    @media (max-width: 1400px) and (min-width: 768px) {
       display: none;
     }
     .navbar-toggle {
@@ -24,6 +24,19 @@
       &:focus, &:hover, &:active {
         background-color: @teal500;
       }
+    }
+  }
+
+  // Center links (http://stackoverflow.com/questions/18777235/center-content-in-responsive-bootstrap-navbar)
+  @media (max-width: 1400px) and (min-width: 768px) {
+    .navbar-nav {
+      display: inline-block;
+      float: none;
+      vertical-align: top;
+    }
+
+    .navbar-collapse {
+      text-align: center;
     }
   }
 
@@ -39,7 +52,7 @@
         font-size: large;
         font-weight: bold;
         // Reduce padding between nav elements for small screens (landscape iPad and below)
-        @media (max-width: 1024px) {
+        @media (max-width: 1200px) {
           padding: 1.0em 2.5em;
         }
         // Shrink even further for portrait iPad

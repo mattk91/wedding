@@ -11,7 +11,7 @@
 .navbar .navbar-collapse {
   border-color: #4DB6AC;
 }
-@media (max-width: 1024px) and (min-width: 768px) {
+@media (max-width: 1400px) and (min-width: 768px) {
   .navbar .navbar-header {
     display: none;
   }
@@ -24,6 +24,16 @@
 .navbar .navbar-header .navbar-toggle:active {
   background-color: #009688;
 }
+@media (max-width: 1400px) and (min-width: 768px) {
+  .navbar .navbar-nav {
+    display: inline-block;
+    float: none;
+    vertical-align: top;
+  }
+  .navbar .navbar-collapse {
+    text-align: center;
+  }
+}
 .navbar .nav li a {
   color: white;
   display: block;
@@ -34,7 +44,7 @@
   font-size: large;
   font-weight: bold;
 }
-@media (max-width: 1024px) {
+@media (max-width: 1200px) {
   .navbar .nav li a {
     padding: 1.0em 2.5em;
   }
@@ -314,6 +324,7 @@ body {
 .mc-logo {
   max-width: 100%;
   position: absolute;
+  top: 25%;
   left: 5%;
   z-index: 10;
   width: 40%;
