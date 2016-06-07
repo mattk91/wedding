@@ -17,6 +17,9 @@
   -webkit-filter: grayscale(50%) brightness(0.55);
   -filter: grayscale(50%) brightness(0.55);
 }
+a {
+  color: #FF6D00;
+}
 .button {
   background-color: transparent;
   cursor: pointer;
