@@ -5,8 +5,8 @@
         .module('app')
         .controller('RsvpController', RsvpController);
 
-    RsvpController.$inject = ['$scope', '$http', '$httpParamSerializerJQLike'];
-    function RsvpController($scope, $http, $httpParamSerializerJQLike) {
+    RsvpController.$inject = ['$scope', '$http', '$httpParamSerializerJQLike', '$anchorScroll', '$timeout'];
+    function RsvpController($scope, $http, $httpParamSerializerJQLike, $anchorScroll, $timeout) {
         var mailerUrl = 'mail/submit.php';
         var successContainsStr = 'Thanks!  We\'ve received your information';
         $scope.email = 'mncwedding2016@gmail.com';
@@ -22,7 +22,7 @@
             {value: 'titanic', name: 'Titanic Trail'}
         ];
         $scope.formData.tour = $scope.tourOptions[0].value;
-
+        $anchorScroll('rsvp');
         $scope.submitRsvp = function() {
             process();
             $http.post(
