@@ -5,8 +5,8 @@
         .module('app')
         .controller('MainController', MainController);
 
-    MainController.$inject = ['$scope', 'stellar'];
-    function MainController($scope, stellar) {
+    MainController.$inject = ['$scope'];
+    function MainController($scope) {
         //stellar.against(window);
     }
 

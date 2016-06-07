@@ -7,7 +7,5 @@
 
     HomeController.$inject = ['$scope', '$rootScope'];
     function HomeController($scope, $rootScope) {
-        $rootScope.subTitle = '';
-        $rootScope.showNavBar = false;
     }
 })();
