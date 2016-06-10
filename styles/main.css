@@ -344,7 +344,7 @@ select.form-control {
 }
 @media (orientation: portrait) and (max-width: 767px) {
   .mc-logo {
-    top: 65%;
+    top: 60%;
     width: 80%;
     left: 10%;
   }
