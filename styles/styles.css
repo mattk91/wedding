@@ -152,6 +152,22 @@ select.form-control {
     top: 24%;
   }
 }
+.down {
+  position: absolute;
+  bottom: 5%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  width: 32px;
+  height: 32px;
+}
+@media (min-width: 768px) {
+  .down {
+    display: none;
+  }
+}
 .logo-white {
   margin-top: 50px;
 }
