@@ -92,14 +92,14 @@ select.form-control {
   position: relative;
   -webkit-filter: grayscale(50%) brightness(0.55);
   -filter: grayscale(50%) brightness(0.55);
-  background-image: url('../img/panama-landscape.jpg');
+  background-image: url('../img/rsz1280_panama-landscape.jpg');
   margin-top: 30px;
   background-repeat: no-repeat;
   background-size: 100% auto;
 }
 @media (min-aspect-ratio: 6/4) and (min-width: 1025px) {
   .img-background {
-    background-image: url('../img/panama-landscape-wide.jpg');
+    background-image: url('../img/rsz1500_panama-landscape-wide.jpg');
     padding-top: 47.7%;
   }
 }
@@ -109,12 +109,13 @@ select.form-control {
     padding-top: 0;
     margin-top: 0;
     background-position: center 20px;
+    background-image: url('../img/rsz800_panama-landscape.jpg');
     background-size: cover;
   }
 }
 @media (max-width: 767px) and (orientation: portrait) {
   .img-background {
-    background-image: url('../img/matt-colleen-panama-narrow2.jpg');
+    background-image: url('../img/rsz_matt-colleen-panama-narrow2.jpg');
     background-position: bottom center;
   }
 }
